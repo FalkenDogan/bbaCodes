@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quizzer Tutorial</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div class="questionSetNameContainer panel">
+                <p id="questionSetLabel" class="title-text">Question Set Name</p>
+            </div>
+            <div id="app" class="panel">	
+                <div id="gameplay">
+                    <div class="question-label-container inner-panel">
+                        <h2 id="questionLabel">Question goes here</h2>
+                    </div>
+    
+                    <div id="optionList" class="inner-panel">
+                        <div class="option">
+                            <input type="checkbox" class="option-checkbox" disabled="true">
+                            <p class="option-label">Option 1</p>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" class="option-checkbox" disabled="true">
+                            <p class="option-label">Option 1</p>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" class="option-checkbox" disabled="true">
+                            <p class="option-label">Option 1</p>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" class="option-checkbox" disabled="true">
+                            <p class="option-label">Option 1</p>
+                        </div>
+                    </div>
+    
+                    <div class="submit-button-container inner-panel">
+                        <button id="submitButton" class="submit-button-disabled">Submit</button>
+                    </div>
+                </div>
+                
+                <div class="end-screen" style="display: none;">
+                    <div class="summary-label-container inner-panel">
+                        <h2 class="summary-label">Summary</h2>
+                    </div>
+                    
+                    <div class="summary-quiz-details inner-panel">
+                        <div class="accuracy-progress-bar-outer">
+                            <div id="accuracyProgressBarLabel">50%</div>
+                        </div>
+                        
+                        <div class="summary-details">
+                            <p id="summaryDetails">50/60 points<br>20 questions<br>5 correct<br>6 partially correct<br>10 incorrect</p>
+                        </div>
+                    </div>
+                    
+                    <div class="summary-question-history-list inner-panel">
+                        <div class="summary-question">
+                            <p class="summary-question-name">(20/20) Question name will go in this text field</p>
+                            <div class="summary-question-option-list">
+                                <div class="summary-question-option incorrect selected">
+                                    <p>Option name goes here</p>
+                                </div>
+                                <div class="summary-question-option">
+                                    <p>Option name goes here</p>
+                                </div>
+                                <div class="summary-question-option correct">
+                                    <p>Option name goes here</p>
+                                </div>
+                                <div class="summary-question-option correct selected">
+                                    <p>Option name goes here</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+<script src="index-script.js"></script>
+</html>
